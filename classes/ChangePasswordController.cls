@@ -1,6 +1,5 @@
 /**
  * An apex page controller that exposes the change password functionality
- * Some additional notes I've made to this Apex class
  */
 public with sharing class ChangePasswordController {
     public String oldPassword {get; set;}
@@ -8,7 +7,10 @@ public with sharing class ChangePasswordController {
     public String verifyNewPassword {get; set;}        
     
     public PageReference changePassword() {
-        return Site.changePassword(newPassword, verifyNewPassword, oldpassword);    
+        System.PageReference result = Site.changePassword(newPassword, verifyNewPassword, oldpassword);
+        
+        return result; // works
+        //return result == null ? new System.PageReference('https://www.google.com') : result; // breaks test
     }     
     
     public ChangePasswordController() {}
