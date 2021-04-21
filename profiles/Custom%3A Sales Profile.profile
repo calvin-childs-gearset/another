@@ -1483,7 +1483,7 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
         <recordType>Account.testAccount</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

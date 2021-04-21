@@ -1381,7 +1381,7 @@
         <layout>objectwith_hyphen__c-objectwith-hyphen Layout</layout>
     </layoutAssignments>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
         <recordType>Account.testAccount</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

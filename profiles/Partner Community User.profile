@@ -1216,7 +1216,7 @@
         <recordType>TestObj__c.NewTestName</recordType>
     </layoutAssignments>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
         <recordType>Account.testAccount</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

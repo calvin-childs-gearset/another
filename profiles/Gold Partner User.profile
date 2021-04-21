@@ -1216,7 +1216,7 @@
         <layout>TestObj__c-TestObj Layout</layout>
     </layoutAssignments>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
         <recordType>Account.testAccount</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
