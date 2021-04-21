@@ -125,6 +125,8 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>IsPublished</fullName>
         <trackHistory>true</trackHistory>
@@ -146,8 +148,26 @@
         <trackHistory>true</trackHistory>
         <type>Picklist</type>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
+    <listViews>
+        <fullName>AllReviewedSolutions</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SOLUTION.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Reviewed Solutions</label>
+    </listViews>
+    <listViews>
+        <fullName>AllUnreviewedSolutions</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SOLUTION.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Unreviewed Solutions</label>
+    </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>SOLUTION.ISSUE</customTabListAdditionalFields>
         <customTabListAdditionalFields>SOLUTION.SOLUTION_NUMBER</customTabListAdditionalFields>

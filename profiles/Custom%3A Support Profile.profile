@@ -1,6 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <custom>true</custom>
-    <userLicense>Salesforce</userLicense>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.BillingAddress</field>
@@ -11,7 +15,11 @@
         <field>Account.CleanStatus</field>
         <readable>true</readable>
     </fieldPermissions>
-    
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.CustomerPriority__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.DandbCompanyId</field>
@@ -35,6 +43,31 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Jigsaw</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.NumberofLocations__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Region__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SLAExpirationDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SLASerialNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SLA__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -64,6 +97,56 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.UpsellOpportunity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.dollarydoos__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.newField__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Book__c.Price__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.EngineeringReqNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.PotentialLiability__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.SLAViolation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Languages__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Level__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contract.CompanySignedId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -77,8 +160,6 @@
         <field>Account.Industry</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.ShippingAddress</field>
@@ -104,7 +185,6 @@
         <field>Campaign.Description</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Ownership</field>
@@ -120,13 +200,11 @@
         <field>Account.Phone</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.ParentId</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.YearStarted</field>
@@ -262,7 +340,6 @@
         <field>Asset.PurchaseDate</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Campaign.IsActive</field>
@@ -328,7 +405,6 @@
         <field>Campaign.Status</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Campaign.NumberOfContacts</field>
@@ -364,7 +440,6 @@
         <field>Case.Reason</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Description</field>
@@ -390,8 +465,6 @@
         <field>Case.Priority</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.AssistantName</field>
@@ -447,7 +520,6 @@
         <field>Contact.Jigsaw</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AccountNumber</field>
@@ -463,7 +535,6 @@
         <field>Contact.MailingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.MobilePhone</field>
@@ -514,7 +585,6 @@
         <field>Case.SuppliedName</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Type</field>
@@ -692,6 +762,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Lead.CurrentGenerators__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Lead.LeadSource</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -757,6 +832,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Lead.ProductInterest__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Amount</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -780,8 +860,6 @@
         <field>Lead.NumberOfEmployees</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Title</field>
@@ -824,6 +902,31 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.CurrentGenerators__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.DeliveryInstallationStatus__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.MainCompetitors__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.OrderNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.TrackingNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Order.PoNumber</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -837,13 +940,11 @@
         <field>Order.ShippingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.NextStep</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Probability</field>
@@ -854,7 +955,6 @@
         <field>Opportunity.TotalOpportunityQuantity</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Type</field>
@@ -940,7 +1040,6 @@
         <field>OpportunityLineItem.ProductCode</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Description</field>
@@ -1096,7 +1195,6 @@
         <field>Product2.ProductCode</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Task.Description</field>
@@ -1105,6 +1203,146 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Task.ActivityDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.dollaBills__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled10__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled11__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled12__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled13__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled14__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled15__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled16__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled17__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled18__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled19__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled20__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled21__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled22__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled23__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled24__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled25__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled26__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled27__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TestObjecttttt__c.newfiled2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled3__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled4__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled5__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled6__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled7__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled8__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObjecttttt__c.newfiled9__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
@@ -1235,8 +1473,13 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <recordTypeVisibilities>
-        <default>true</default>
+        <default>false</default>
         <recordType>Account.MyRecordType</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.testAccount</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -1280,6 +1523,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-ContentNote</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Dashboard</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -1304,6 +1551,14 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-EmailTemplate</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Event</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Idea</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -1324,7 +1579,15 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-ProcessInstanceWorkitem</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Product2</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Task</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -1363,6 +1626,7 @@
         <tab>standard-UserProfile</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
         <name>ConvertLeads</name>

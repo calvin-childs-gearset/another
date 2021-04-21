@@ -1,6 +1,70 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <custom>false</custom>
-    <userLicense>Customer Portal Manager Custom</userLicense>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.CustomerPriority__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.NumberofLocations__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SLAExpirationDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SLASerialNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SLA__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.UpsellOpportunity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.EngineeringReqNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.PotentialLiability__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.SLAViolation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Languages__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Level__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.CleanStatus</field>
@@ -11,7 +75,11 @@
         <field>Lead.CompanyDunsNumber</field>
         <readable>true</readable>
     </fieldPermissions>
-    
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.CurrentGenerators__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.DandbCompanyId</field>
@@ -62,15 +130,31 @@
         <field>Lead.AnnualRevenue</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.NumberofLocations__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Primary__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.ProductInterest__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Rating</field>
         <readable>true</readable>
     </fieldPermissions>
-    
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.SICCode__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Title</field>
@@ -101,7 +185,31 @@
         <field>Lead.MobilePhone</field>
         <readable>true</readable>
     </fieldPermissions>
-    
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.CurrentGenerators__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.DeliveryInstallationStatus__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.MainCompetitors__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.OrderNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.TrackingNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Order.ShipToContactId</field>
@@ -272,7 +380,6 @@
         <field>Order.Type</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>OrderItem.EndDate</field>
@@ -428,7 +535,6 @@
         <field>Opportunity.NextStep</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Probability</field>
@@ -439,7 +545,6 @@
         <field>Opportunity.TotalOpportunityQuantity</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Type</field>
@@ -530,7 +635,6 @@
         <field>Order.TotalAmount</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Contract.Description</field>
@@ -596,7 +700,6 @@
         <field>Asset.IsInternal</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.TickerSymbol</field>
@@ -677,7 +780,6 @@
         <field>Asset.Quantity</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Asset.SerialNumber</field>
@@ -748,7 +850,6 @@
         <field>Account.NaicsDesc</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.NumberOfEmployees</field>
@@ -774,9 +875,6 @@
         <field>Account.Rating</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.ShippingAddress</field>
@@ -802,7 +900,6 @@
         <field>Campaign.Description</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Campaign.EndDate</field>
@@ -878,7 +975,6 @@
         <field>Contact.Jigsaw</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.LeadSource</field>
@@ -889,7 +985,6 @@
         <field>Contact.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.MobilePhone</field>
@@ -1035,7 +1130,6 @@
         <field>Campaign.Type</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Campaign.NumberOfLeads</field>
@@ -1051,7 +1145,6 @@
         <field>Case.Subject</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.ParentId</field>
@@ -1087,7 +1180,6 @@
         <field>Case.ContactId</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Origin</field>
@@ -1098,8 +1190,6 @@
         <field>Case.SuppliedCompany</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Description</field>
@@ -1116,8 +1206,13 @@
         <layout>TestObj__c-TestObj Layout</layout>
     </layoutAssignments>
     <recordTypeVisibilities>
-        <default>true</default>
+        <default>false</default>
         <recordType>Account.MyRecordType</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.testAccount</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -1272,6 +1367,7 @@
         <tab>standard-EmailTemplate</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <userLicense>Customer Portal Manager Custom</userLicense>
     <userPermissions>
         <enabled>true</enabled>
         <name>ChatterOwnGroups</name>

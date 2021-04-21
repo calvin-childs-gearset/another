@@ -125,6 +125,8 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
@@ -168,8 +170,11 @@
         <fullName>StockKeepingUnit</fullName>
         <trackHistory>false</trackHistory>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
+    <listViews>
+        <fullName>AllProducts</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Products</label>
+    </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>

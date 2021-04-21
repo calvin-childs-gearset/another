@@ -153,6 +153,9 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
     <fields>
         <fullName>ActualCost</fullName>
     </fields>
@@ -263,9 +266,6 @@
         <fullName>Type</fullName>
         <type>Picklist</type>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
     <searchLayouts>
         <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>CAMPAIGN.STATUS</customTabListAdditionalFields>
@@ -302,4 +302,24 @@
         <url>/00O?rt=117&amp;break0=CAN&amp;scope=1&amp;scopeid_lkid={!Campaign.Id}&amp;scopeid={!Campaign_Name}&amp;c=CAN&amp;c=MR&amp;c=PCS&amp;c=CFN&amp;c=RN&amp;c=ON&amp;c=OA&amp;c=OS&amp;c=OCD&amp;c=AN&amp;s=OA&amp;duel0=CAN%2CMR%2CCFN%2CRN%2CAN%2CON%2CPCS%2COS%2COCD%2COA&amp;details=yes&amp;format=t</url>
         <width>500</width>
     </webLinks>
+    <listViews>
+        <fullName>AllActiveCampaigns</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>MyActiveCampaigns</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Active Campaigns</label>
+    </listViews>
 </CustomObject>
